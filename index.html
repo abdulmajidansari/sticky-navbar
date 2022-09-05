@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+            padding: 15px;
+        }
+        #logo{
+            width: 200px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 25px 20px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+    
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        #image{
+            width: 100%;
+            height: 50%;
+        }
+        .sticky{
+            position:fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="./logo-ga6953077d_1280.png" id="logo" alt="">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img id="image" src="./pexels-svitlana-myslyvets-12780808.jpg"  width="100%" alt="">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam molestias cupiditate qui esse, eligendi nemo veritatis quasi eaque beatae consequatur doloremque dolorem nisi in repellendus tenetur? Porro ab, culpa illo nam neque soluta! Nam, modi ea! Facere atque vitae eligendi dolor quo magnam, minima repellat velit, odit fugiat dolorem harum eaque a! Reprehenderit maxime cum sequi, iure quasi minima eveniet explicabo porro at animi saepe odit nulla mollitia molestias doloribus delectus! Veniam facere aut eaque fuga nostrum alias nisi nesciunt officia tenetur possimus, sed eligendi inventore ipsam, labore quo modi deleniti laborum, doloremque aperiam repellendus aspernatur soluta. Autem in porro laborum, sed consectetur ratione iusto beatae distinctio, quam voluptatem, aliquid corrupti facilis tenetur. Veritatis saepe illum, aperiam asperiores tempora maxime suscipit excepturi tempore alias enim quibusdam, eius quidem similique laborum sit dolor, deleniti aut ipsam molestiae iusto dignissimos rem assumenda. Quam, velit ipsam quis ex odio dignissimos totam cupiditate magni! Harum optio autem labore doloremque? Maxime nam, cupiditate molestiae mollitia quam officiis aliquam odio tempore ut eum, consequuntur id animi dolorem harum sed autem numquam doloremque beatae. Modi, maiores perspiciatis sequi ullam voluptatibus, placeat ipsam dolore tempora fugit, accusamus aperiam sed at fuga voluptatum. Dolor quidem ipsa eos voluptate qui animi quam maxime facilis, reprehenderit repellendus suscipit, in ea saepe odit, eaque magni officiis tempora voluptates cupiditate? Rerum ipsam voluptatum, hic quod similique accusamus natus expedita dolor quibusdam nemo consequuntur eligendi voluptatibus maiores ex molestiae quam amet sint? A aliquam ex quidem ad sed vitae? Sed quo aspernatur rem molestias, ducimus ut velit eos nemo quod commodi sint nisi ratione! Voluptatem quo doloribus numquam at molestias voluptas cupiditate neque quisquam natus, et deleniti ipsum adipisci! Cum placeat eum iusto doloremque impedit deleniti nam, ea quae ut eos distinctio facere, ex modi odio laudantium explicabo nihil est fugit enim unde maxime ipsa aliquid? Laboriosam deserunt nobis dignissimos! Molestiae aut necessitatibus quisquam esse earum, facilis, eius nisi tempore deleniti vitae hic! Corrupti quod harum tempore voluptatem neque quas cum dignissimos quos doloremque ab obcaecati, molestias hic modi repudiandae vitae totam, sit commodi illum ipsam! Perspiciatis sapiente minus beatae ipsam. Laboriosam laudantium officia dicta magnam adipisci rerum eius nostrum deleniti odio iusto, ipsa molestias cupiditate animi pariatur, molestiae necessitatibus expedita corrupti quae. Voluptatum mollitia excepturi enim iste tenetur dolorum illum. Hic non laboriosam repudiandae commodi ducimus, atque labore, placeat ad doloribus amet consequuntur illum rem minima facilis a officiis? Quae cumque tempore a dignissimos! Exercitationem repudiandae non doloremque laborum molestias eius earum a perspiciatis, sapiente consectetur fugit illo quae repellat iure dolorem unde officia assumenda delectus ut magnam aperiam incidunt. Deleniti incidunt a ad laudantium? Inventore autem placeat amet quasi, numquam maxime minus, deleniti quam accusantium aut magnam nisi rem veniam laborum in laboriosam animi dolorum iure! Hic nesciunt voluptatibus obcaecati harum fuga adipisci reprehenderit quibusdam sint sapiente alias totam eius, officiis ratione sequi dolorum facilis et maxime blanditiis fugiat, repellendus, in doloribus quod! Molestiae nemo asperiores dignissimos? Temporibus, eum quaerat! Eos, fugiat sed. Earum quasi quae dolore adipisci itaque sapiente atque rerum.
+        </p>
+    </div>
+    <script>
+        window.addEventListener('scroll',function(){
+            let navbar = document.getElementById("menu-bar");
+            if(window.pageYOffset >154){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
